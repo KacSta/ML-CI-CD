@@ -17,7 +17,7 @@ def test_predictions_length():
     assert len(preds) == len(test_input), f"Oczekiwano {len(test_input)} wyników, otrzymano {len(preds)}"
 
 def test_predictions_value_range():
-    test_input = np.array([1],[100])
+    test_input = np.array([[1],[100]])
     preds = model.predict(test_input)
 
     for p in preds:
